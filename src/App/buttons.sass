@@ -1,0 +1,70 @@
+.btn
+  padding: 5px 15px
+  margin: 10px 5px
+  border-radius: 5px
+  transition: 0.3s ease
+  cursor: pointer
+  &-remove
+    visibility: hidden
+    width: 25px
+    height: 25px
+    opacity: 0.3
+    position: relative
+    padding: 0
+    background: inherit
+    border: none
+    cursor: pointer
+    &:hover
+      opacity: 1
+    &:before,
+    &:after
+      position: absolute
+      top: 3px
+      left: 12px
+      content: ''
+      height: 20px
+      width: 2px
+      background-color: #808080
+    &:before
+      transform: rotate(45deg)
+    &:after
+      transform: rotate(-45deg)
+  &-active
+    visibility: visible
+  &-add
+    background: none
+    border: none
+    background-color: inherit
+    color: #007BFF
+    padding: 5px 5px 5px 20px
+    margin-left: 20px
+    position: relative
+    cursor: pointer
+    &:before,
+    &:after
+      position: absolute
+      top: 7px
+      left: 5px
+      content: ''
+      height: 10px
+      width: 2px
+      background-color: #007BFF
+    &:before
+      transform: rotate(90deg)
+    &:hover
+      color: #3A99FC
+      &:before,
+      &:after
+        background-color: #3A99FC
+  &-apply
+    background-color: #007BFF
+    color: #fff
+    border: 1px solid #007BFF
+    &:hover
+      background-color: #3A99FC
+  &-clear
+    background-color: #fff
+    color: grey
+    border: 1px solid grey
+    &:hover
+      color: #404040
